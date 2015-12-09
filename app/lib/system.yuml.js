@@ -18,14 +18,16 @@ window.showModuleRelationships = function () {
   var dependencyDefinitions = modules
     .filter(function (module) { return module.deps.length > 0; })
     .map(function (module) {
-      var name = displayName(module.name);
-      var dependencies = module.deps
-        .map(function (depName) { return module.depMap[depName]; })
+      return module.deps
+        .map(function (depName) {
+          return module.depMap[depName];
+        })
         .map(displayName)
-        .map(function (dependencyName) { return "[" + name + "]->[" + dependencyName + "]"; });
-      return dependencies;
+        .map(function (dependencyName) {
+          return "[" + displayName(module.name) + "]->[" + dependencyName + "]";
+        });
     })
     .join(",");
       
   window.open('http://yuml.me/diagram/plain/class/' + [moduleDefinitions, dependencyDefinitions].join(","));
-}
+};
