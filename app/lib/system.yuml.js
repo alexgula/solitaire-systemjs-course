@@ -12,7 +12,7 @@ window.showModuleRelationships = function () {
 
   var moduleDefinitions = modules.map(function (module) {
     var name = displayName(module.name);
-    return "[" + name + "]";
+    return "[" + name + "|" + module.metadata.format + "]";
   });
 
   var dependencyDefinitions = modules
