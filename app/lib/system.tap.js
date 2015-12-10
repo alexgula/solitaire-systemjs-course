@@ -1,5 +1,3 @@
-/* global System */
-
 var systemNormalize = System.normalize;
 System.normalize = function (name, parentName, parentAddress) {
   console.log("normalize:", {

@@ -5,16 +5,16 @@ window.showModuleRelationships = function () {
     .map(function (moduleName) {
       return System.loads[moduleName];
     });
-  
+
   function displayName(moduleName) {
     return moduleName.replace(System.baseURL, '');
   }
-  
+
   var moduleDefinitions = modules.map(function (module) {
     var name = displayName(module.name);
     return "[" + name + "]";
   });
-  
+
   var dependencyDefinitions = modules
     .filter(function (module) { return module.deps.length > 0; })
     .map(function (module) {
@@ -28,6 +28,6 @@ window.showModuleRelationships = function () {
         });
     })
     .join(",");
-      
+
   window.open('http://yuml.me/diagram/plain/class/' + [moduleDefinitions, dependencyDefinitions].join(","));
 };
