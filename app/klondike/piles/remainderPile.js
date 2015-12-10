@@ -1,11 +1,7 @@
-function WastePile(cards, scoring) {
-  Pile.call(this, cards, scoring);
-}
+import Pile from "./pile.js";
+import WastePile from "./wastePile.js";
 
-WastePile.prototype = Object.create(Pile.prototype);
-WastePile.prototype.constructor = WastePile;
-
-function RemainderPile(cards, scoring) {
+export default function RemainderPile(cards, scoring) {
   Pile.call(this, cards, scoring);
   this.waste = new WastePile([], scoring);
 }

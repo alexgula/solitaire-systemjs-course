@@ -1,4 +1,4 @@
-function Pile(cards, scoring) {
+export default function Pile(cards, scoring) {
   this.cards = cards || [];
   this.scoring = scoring;
 }

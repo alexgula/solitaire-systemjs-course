@@ -1,5 +1,6 @@
+import Pile from "./pile.js";
 
-function TableauPile(cards, scoring) {
+export default function TableauPile(cards, scoring) {
   Pile.call(this, cards, scoring);
 }
 

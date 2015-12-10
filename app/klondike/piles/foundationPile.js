@@ -1,5 +1,6 @@
+import Pile from "./pile.js";
 
-function FoundationPile(cards, scoring) {
+export default function FoundationPile(cards, scoring) {
   Pile.call(this, cards, scoring);
 }
 
