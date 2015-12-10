@@ -1,3 +1,6 @@
+import "app/klondike/klondike.js";
+import Deck from "app/cards/deck.js";
+
 describe("A game of klondike", function () {
   "use strict";
 

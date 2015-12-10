@@ -1,3 +1,5 @@
+import "app/klondike/klondike.js";
+
 describe("A klondike board controller", function () {
   "use strict";
 

@@ -1,3 +1,6 @@
+import { Card } from "app/cards/card.js";
+import FoundationPile from "app/klondike/piles/foundationPile.js";
+
 describe("A foundation pile", function () {
   "use strict";
 

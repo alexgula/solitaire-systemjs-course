@@ -1,3 +1,5 @@
+import Deck from "app/cards/deck.js";
+
 describe("A deck of cards", function () {
   "use strict";
 

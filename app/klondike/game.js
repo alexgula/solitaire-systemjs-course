@@ -1,4 +1,4 @@
-import Deck from "cards/deck.js";
+import Deck from "../cards/deck.js";
 import TableauPile from "./piles/tableauPile.js";
 import FoundationPile from "./piles/foundationPile.js";
 import RemainderPile from "./piles/remainderPile.js";

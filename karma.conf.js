@@ -26,7 +26,7 @@ module.exports = function (config) {
         "app/**/*.js"
       ],
       loadFiles: [
-        "tests/cards/card_test.js"
+        "tests/**/*.js"
       ],
       stripExtension: false
     },
