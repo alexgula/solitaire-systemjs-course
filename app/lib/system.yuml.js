@@ -20,7 +20,7 @@ window.showModuleRelationships = function () {
     .map(function (module) {
       return module.deps
         .map(function (depName) {
-          return module.depMap[depName];
+          return System.normalizeSync(depName, module.name, module.address);
         })
         .map(displayName)
         .map(function (dependencyName) {
