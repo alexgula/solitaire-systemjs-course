@@ -1,6 +1,6 @@
 System.config({
   transpiler: 'traceur',
   map: {
-    'traceur': "bower_components/traceur/traceur.js"
+    'traceur': "../app/bower_components/traceur/traceur.js" // need redundant ../app since karma-jspm sets baseURL to 'base'
   }
 });
