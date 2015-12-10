@@ -1,3 +1,5 @@
+import Deck from "cards/deck.js";
+
 (function () {
   "use strict";
 

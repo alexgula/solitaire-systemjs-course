@@ -1,4 +1,4 @@
-export class Scoring {
+export default class Scoring {
   constructor() {
     this.score = 0;
   }
