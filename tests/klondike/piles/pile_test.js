@@ -1,5 +1,5 @@
-import Deck from "app/cards/deck.js";
-import Pile from "app/klondike/piles/pile.js";
+import Deck from "cards/deck.js";
+import Pile from "klondike/piles/pile.js";
 
 describe("A pile", function () {
   "use strict";

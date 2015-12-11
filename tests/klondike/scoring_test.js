@@ -1,8 +1,8 @@
-import "app/klondike/klondike.js";
-import { Card } from "app/cards/card.js";
-import FoundationPile from "app/klondike/piles/foundationPile.js";
-import RemainderPile from "app/klondike/piles/remainderPile.js";
-import TableauPile from "app/klondike/piles/tableauPile.js";
+import "klondike/klondike.js";
+import { Card } from "cards/card.js";
+import FoundationPile from "klondike/piles/foundationPile.js";
+import RemainderPile from "klondike/piles/remainderPile.js";
+import TableauPile from "klondike/piles/tableauPile.js";
 
 describe("The score", function () {
   "use strict";

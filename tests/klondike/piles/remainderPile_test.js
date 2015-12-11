@@ -1,6 +1,6 @@
-import { Card } from "app/cards/card.js";
-import Deck from "app/cards/deck.js";
-import RemainderPile from "app/klondike/piles/remainderPile.js";
+import { Card } from "cards/card.js";
+import Deck from "cards/deck.js";
+import RemainderPile from "klondike/piles/remainderPile.js";
 
 describe("A remainder pile", function () {
   "use strict";
