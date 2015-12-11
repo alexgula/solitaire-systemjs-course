@@ -1,3 +1,6 @@
+import angular from "angular";
+import "angular-route";
+
 import KlondikeGame from "./game.js";
 import Scoring from "./scoring.js";
 import "./board.js";

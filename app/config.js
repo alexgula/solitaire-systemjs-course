@@ -13,10 +13,23 @@ System.config({
   },
 
   map: {
+    "angular": "github:angular/bower-angular@1.4.8",
+    "angular-mocks": "github:angular/bower-angular-mocks@1.4.8",
+    "angular-route": "github:angular/bower-angular-route@1.4.8",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
+    "ngDraggable": "github:fatlinesofcode/ngDraggable@0.1.8",
     "underscore": "npm:underscore@1.8.3",
+    "github:angular/bower-angular-mocks@1.4.8": {
+      "angular": "github:angular/bower-angular@1.4.8"
+    },
+    "github:angular/bower-angular-route@1.4.8": {
+      "angular": "github:angular/bower-angular@1.4.8"
+    },
+    "github:fatlinesofcode/ngDraggable@0.1.8": {
+      "angular": "github:angular/bower-angular@1.4.8"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

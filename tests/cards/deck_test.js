@@ -1,3 +1,5 @@
+import { inject } from "angular-mocks";
+
 import Deck from "app/cards/deck.js";
 
 describe("A deck of cards", function () {

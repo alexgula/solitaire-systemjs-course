@@ -1,3 +1,5 @@
+import { inject, module } from "angular-mocks";
+
 import "klondike/klondike.js";
 
 describe("A klondike board controller", function () {

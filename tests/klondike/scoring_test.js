@@ -1,3 +1,5 @@
+import { inject, module } from "angular-mocks";
+
 import "klondike/klondike.js";
 import { Card } from "cards/card.js";
 import FoundationPile from "klondike/piles/foundationPile.js";

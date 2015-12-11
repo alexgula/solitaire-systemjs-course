@@ -32,12 +32,28 @@
       "baseURL": "app"
     },
     "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.8",
+      "angular-mocks": "github:angular/bower-angular-mocks@^1.4.8",
+      "angular-route": "github:angular/bower-angular-route@^1.4.8",
+      "ngDraggable": "github:fatlinesofcode/ngDraggable@^0.1.8",
       "underscore": "npm:underscore@^1.8.3"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
+    },
+    "overrides": {
+      "github:fatlinesofcode/ngDraggable@0.1.8": {
+        "dependencies": {
+          "angular": "jspm:angular@^1.4.8"
+        },
+        "shim": {
+          "ngDraggable": [
+            "angular"
+          ]
+        }
+      }
     }
   }
 }

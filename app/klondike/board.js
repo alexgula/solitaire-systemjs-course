@@ -1,3 +1,5 @@
+import angular from "angular";
+
 angular.module("klondike.board", ["ngRoute", "klondike.game"])
   .config(["$routeProvider", function ($routeProvider) {
     $routeProvider
