@@ -1,3 +1,5 @@
+import _ from "underscore";
+
 import { Card, ranksInImagesOrder, suitsInImagesOrder } from "./card.js";
 
 export default class Deck {

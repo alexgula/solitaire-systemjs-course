@@ -1,3 +1,5 @@
+import _ from "underscore";
+
 import "klondike/klondike.js";
 import Deck from "cards/deck.js";
 
