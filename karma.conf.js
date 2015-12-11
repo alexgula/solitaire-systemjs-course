@@ -15,14 +15,12 @@ module.exports = function (config) {
     ],
 
     proxies: {
-      "/app/bower_components": "/base/app/bower_components"
+      "/base/jspm_packages": "/base/app/jspm_packages"
     },
 
     jspm: {
       config: "app/config.js",
-      packages: "app/bower_components/system.js/dist",
       serveFiles: [
-        "app/bower_components/traceur/traceur.js",
         "app/**/*.js"
       ],
       loadFiles: [
