@@ -20,7 +20,6 @@ module.exports = function (config) {
     },
 
     jspm: {
-      config: "app/config.js",
       serveFiles: [
         "app/**/*.js"
       ],

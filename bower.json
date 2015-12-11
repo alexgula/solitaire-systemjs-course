@@ -6,9 +6,6 @@
     "angular-route": "1.2.28",
     "angular-loader": "1.2.28",
     "angular-mocks": "1.2.28",
-    "ngDraggable": "0.1.8",
-    "es6-module-loader": "~0.17.8",
-    "traceur": "~0.0.92",
-    "system.js": "~0.19.6"
+    "ngDraggable": "0.1.8"
   }
 }
