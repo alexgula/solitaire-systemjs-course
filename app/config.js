@@ -20,6 +20,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
     "ngDraggable": "github:fatlinesofcode/ngDraggable@0.1.8",
+    "text": "github:systemjs/plugin-text@0.0.4",
     "underscore": "npm:underscore@1.8.3",
     "github:angular/bower-angular-mocks@1.4.8": {
       "angular": "github:angular/bower-angular@1.4.8"

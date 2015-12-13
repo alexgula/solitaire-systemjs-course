@@ -1,10 +1,17 @@
 import angular from "angular";
+import "angular-route";
+import cardTemplate from "../cards/card.html!text";
+import boardTemplate from "./board.html!text";
+import tableauPileTemplate from "./piles/tableau.html!text";
+import foundationPileTemplate from "./piles/foundation.html!text";
+import remainderPileTemplate from "./piles/remainder.html!text";
+import wastePileTemplate from "./piles/waste.html!text";
 
 angular.module("klondike.board", ["ngRoute", "klondike.game"])
   .config(["$routeProvider", function ($routeProvider) {
     $routeProvider
       .when("/board", {
-        templateUrl: "klondike/board.html",
+        template: boardTemplate,
         controller: "KlondikeController"
       })
       .otherwise({ redirectTo: "/board" });
@@ -23,19 +30,19 @@ angular.module("klondike.board", ["ngRoute", "klondike.game"])
   .directive("sTableau", function () {
     return {
       restrict: "E",
-      templateUrl: "klondike/piles/tableau.html"
+      template: tableauPileTemplate
     };
   })
   .directive("sFoundation", function () {
     return {
       restrict: "E",
-      templateUrl: "klondike/piles/foundation.html"
+      template: foundationPileTemplate
     };
   })
   .directive("sCard", function () {
     return {
       restrict: "A",
-      templateUrl: "cards/card.html",
+      template: cardTemplate,
       scope: {
         card: "="
       }
@@ -44,12 +51,12 @@ angular.module("klondike.board", ["ngRoute", "klondike.game"])
   .directive("sRemainder", function () {
     return {
       restrict: "E",
-      templateUrl: "klondike/piles/remainder.html"
+      template: remainderPileTemplate
     };
   })
   .directive("sWaste", function () {
     return {
       restrict: "E",
-      templateUrl: "klondike/piles/waste.html"
+      template: wastePileTemplate
     };
   });
