@@ -12,6 +12,12 @@ System.config({
     "npm:*": "jspm_packages/npm/*"
   },
 
+  meta: {
+    "**/*.html": {
+      "loader": "text"
+    }
+  },
+
   map: {
     "angular": "github:angular/bower-angular@1.4.8",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.8",
