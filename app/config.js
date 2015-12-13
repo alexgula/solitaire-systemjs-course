@@ -27,6 +27,8 @@ System.config({
     "clean-css": "npm:clean-css@3.4.8",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
+    "marked": "npm:marked@0.3.5",
+    "md": "lib/markdown-plugin.js",
     "ngDraggable": "github:fatlinesofcode/ngDraggable@0.1.8",
     "text": "github:systemjs/plugin-text@0.0.4",
     "underscore": "npm:underscore@1.8.3",

@@ -6,6 +6,7 @@ import tableauPileTemplate from "./piles/tableau.html!text";
 import foundationPileTemplate from "./piles/foundation.html!text";
 import remainderPileTemplate from "./piles/remainder.html!text";
 import wastePileTemplate from "./piles/waste.html!text";
+import welcomeTemplate from "./welcome.md!";
 
 angular.module("klondike.board", ["ngRoute", "klondike.game"])
   .config(["$routeProvider", function ($routeProvider) {
@@ -58,5 +59,11 @@ angular.module("klondike.board", ["ngRoute", "klondike.game"])
     return {
       restrict: "E",
       template: wastePileTemplate
+    };
+  })
+  .directive("sWelcome", function () {
+    return {
+      restrict: "E",
+      template: welcomeTemplate
     };
   });
