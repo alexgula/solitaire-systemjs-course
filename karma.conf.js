@@ -12,12 +12,16 @@ module.exports = function (config) {
     proxies: {
       "/base/jspm_packages": "/base/app/jspm_packages",
       "/base/cards": "/base/app/cards",
-      "/base/klondike": "/base/app/klondike"
+      "/base/klondike": "/base/app/klondike",
+      "/base/lib": "/base/app/lib"
     },
 
     jspm: {
       serveFiles: [
-        "app/**/*.js"
+        "app/**/*.js",
+        "app/**/*.css",
+        "app/**/*.html",
+        "app/**/*.md"
       ],
       loadFiles: [
         "tests/**/*.js"
