@@ -17,7 +17,7 @@ div.pile {
 }
 
 .turned-down-card {
-    background: url('../cards/images/b1fv.png');
+    background: url('../jspm_packages/jspm/cards@dev/images/b1fv.png');
     width: 72px;
     height: 96px;
     float: left;
