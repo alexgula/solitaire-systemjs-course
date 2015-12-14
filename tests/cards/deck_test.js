@@ -1,6 +1,6 @@
 import { inject } from "angular-mocks";
 
-import Deck from "app/cards/deck.js";
+import { Deck } from "cards";
 
 describe("A deck of cards", function () {
   "use strict";

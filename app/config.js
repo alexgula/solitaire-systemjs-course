@@ -12,6 +12,12 @@ System.config({
     "npm:*": "jspm_packages/npm/*"
   },
 
+  packages: {
+    "cards": {
+      "main": "index.js"
+    }
+  },
+
   meta: {
     "**/*.html": {
       "loader": "text"

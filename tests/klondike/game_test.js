@@ -2,7 +2,7 @@ import { inject, module } from "angular-mocks";
 import _ from "underscore";
 
 import "klondike/klondike.js";
-import Deck from "cards/deck.js";
+import { Deck } from "cards";
 
 describe("A game of klondike", function () {
   "use strict";

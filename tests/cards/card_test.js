@@ -1,4 +1,4 @@
-import { Card } from "app/cards/card.js";
+import { Card } from "cards";
 
 describe("A card", function () {
   "use strict";

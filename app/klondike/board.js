@@ -1,6 +1,6 @@
 import angular from "angular";
 import "angular-route";
-import cardTemplate from "../cards/card.html!text";
+import cardTemplate from "./card.html!text";
 import boardTemplate from "./board.html!text";
 import tableauPileTemplate from "./piles/tableau.html!text";
 import foundationPileTemplate from "./piles/foundation.html!text";

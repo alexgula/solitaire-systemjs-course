@@ -2,7 +2,7 @@ import { inject, module } from "angular-mocks";
 import _ from "underscore";
 
 import "klondike/klondike.js";
-import { Card } from "cards/card.js";
+import { Card } from "cards";
 import RemainderPile from "klondike/piles/remainderPile.js";
 import TableauPile from "klondike/piles/tableauPile.js";
 

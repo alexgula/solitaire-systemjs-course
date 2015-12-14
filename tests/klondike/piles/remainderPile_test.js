@@ -1,7 +1,6 @@
 import { inject, module } from "angular-mocks";
 
-import { Card } from "cards/card.js";
-import Deck from "cards/deck.js";
+import { Card, Deck } from "cards";
 import RemainderPile from "klondike/piles/remainderPile.js";
 
 describe("A remainder pile", function () {
