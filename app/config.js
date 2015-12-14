@@ -9,8 +9,7 @@ System.config({
   },
   paths: {
     "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*",
-    "jspm:*": "jspm_packages/jspm/*"
+    "npm:*": "jspm_packages/npm/*"
   },
 
   meta: {
@@ -25,7 +24,7 @@ System.config({
     "angular-route": "github:angular/bower-angular-route@1.4.8",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
-    "cards": "jspm:cards@dev",
+    "cards": "github:alexgula/solitaire-systemjs-course-cards@master",
     "clean-css": "npm:clean-css@3.4.8",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
@@ -34,6 +33,9 @@ System.config({
     "ngDraggable": "github:fatlinesofcode/ngDraggable@0.1.8",
     "text": "github:systemjs/plugin-text@0.0.4",
     "underscore": "npm:underscore@1.8.3",
+    "github:alexgula/solitaire-systemjs-course-cards@master": {
+      "underscore": "npm:underscore@1.8.3"
+    },
     "github:angular/bower-angular-mocks@1.4.8": {
       "angular": "github:angular/bower-angular@1.4.8"
     },
@@ -80,9 +82,6 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
-    },
-    "jspm:cards@dev": {
-      "underscore": "npm:underscore@1.8.3"
     },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
